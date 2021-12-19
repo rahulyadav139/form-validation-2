@@ -1,0 +1,77 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: white;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+.input-wrapper {
+  flex-basis: 50%;
+  padding: 0.5rem;
+}
+.button {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+label,
+input,
+button {
+  display: block;
+}
+.inputs {
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 1px 1px #e3e4e6;
+  border: 1px solid #e3e4e6;
+  outline: none;
+}
+.inputs:focus {
+  border-color: #23005c;
+  background-color: #e6d6ff;
+}
+
+.inputs.invalid:focus {
+  border-color: #b00514;
+  background-color: #ffd6da;
+}
+.inputs.invalid {
+  border-color: #b00514;
+  background-color: #ffd6da;
+}
+
+.userinput label {
+  font-size: large;
+}
+
+.form button {
+  font-family: inherit;
+  padding: 0.5rem 1.5rem;
+  background-color: #23005c;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #3b0296;
+}
+.form button:disabled {
+  background-color: #a4a0a8;
+  color: white;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 40rem) {
+  .input-wrapper {
+    flex-basis: 100%;
+  }
+}
